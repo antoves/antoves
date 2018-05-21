@@ -1,38 +1,12 @@
 	<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
-<script type="text/javascript">
-  function initAutocomplete() {
-    // Create the autocomplete object, restricting the search to geographical
-    // location types.
-    autocomplete = new google.maps.places.Autocomplete(
-        /** @type {!HTMLInputElement} */(document.getElementById('YOUR_INPUT_ELEMENT_ID')),
-        {types: ['geocode']});
-
-    // When the user selects an address from the dropdown, populate the address
-    // fields in the form.
-    autocomplete.addListener('place_changed', fillInAddress);
-  }
-
-  function fillInAddress() {
-    // Get the place details from the autocomplete object.
-    var place = autocomplete.getPlace();
-
-  }
-    </script>
-
-    <style type="text/css">
-  .pac-container{
-    margin-top: -50px;
-  }
-</style>
-
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
+		<link rel="shortcut icon" href="img/elements/fav.png">
 		<!-- Author Meta -->
-		<meta name="author" content="codepixer">
+		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
 		<meta name="description" content="">
 		<!-- Meta Keyword -->
@@ -47,12 +21,11 @@
 			CSS
 			============================================= -->
 			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/nice-select.css">					
-			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/nice-select.css">			
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
 			<link rel="stylesheet" href="css/main.css">
 		</head>
 		<body>
@@ -88,50 +61,56 @@
 					</div>
 				</nav>
 			</header>
-			<!-- End Header Area -->	
-				<!-- start banner Area -->
-				<section class="banner-area relative" id="home">	
-					<div class="overlay overlay-bg"></div>
-					<div class="container">
-						<div class="row fullscreen d-flex align-items-center justify-content-center">
-							<div class="banner-content col-lg-10">
-								<h1>
-									Ordina online dai tuoi negozi preferiti				
-								</h1>
-								<h5 class="text-uppercase">Inserisci il tuo indirizzo di consegna</h5>
+			<!-- End Header Area -->
 
-									<div class="mt-10">
-										<form class="form-inline">
-											<input type="text" id="YOUR_INPUT_ELEMENT_ID" name="first_name" placeholder="Indirizzo di consegna" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Indirizzo di consegna'" required="" class="single-input" onFocus="geolocate()">
-										<button class="click-btn btn btn-default"onclick="location.href='no_place.html'"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-									</div>
+			<section class="generic-banner relative">	
+				<div class="container">
+					<div class="row height align-items-center justify-content-center">
+						<div class="col-lg-10">
+							<div class="generic-banner-content">
+								<h2 class="text-white">Il mio ordine</h2>
+								<p> Di seguito trovi tutte le principali domande relative agli ordini. </p>
 
-							</div>											
+</div>							
 						</div>
 					</div>
-				</section>
-				<!-- End banner Area -->	
-				<section class="portfolio-area section-gap" id="portfolio">
-				  <div class="container">
-						<div class="row d-flex justify-content-center">
-							<div class="menu-content col-lg-10">
-								<div class="title text-center">
-									<h1 class="mb-10">Made for Students</h1>
-									<p>Se sei uno Studente hai diritto ad un mondo di offerte riservate a te.</p>
-			<br>
-    
-<a href="#" class="genric-btn warning circle arrow">SONO UNO STUDENTE<span class="lnr lnr-arrow-right"></span></a>
-</div>
-							</div>
-						</div>
-				    
-				    
-				    
-				    
-				    
-				  </div>
-				</section>
-				<footer class="footer-area section-gap">
+				</div>
+			</section>		
+			<!-- End banner Area -->
+		
+		<!-- About Generic Start -->
+		<div class="main-wrapper">
+			<section class="sample-text-area">
+				<div class="container">
+					<h3 class="text-heading">Il mio ordine è in ritardo, cosa posso fare?</h3>
+					<p class="sample-text">
+						Ci dispiace per l’inconveniente. Il modo più veloce per rintracciare il tuo ordine è quello di chiamare al numero che trovi nella mail di conferma che ti abbiamo inviato. 
+
+						Assicurati di avere il numero del tuo ordine a portata di mano per velocizzare il processo.
+
+					</p> <br> <br>
+				<h3 class="text-heading">Il mio ordine è stato rifiutato. Cosa devo fare?</h3><p class="sample-text">
+						Abbiamo recentemente sviluppato un nuovo sistema di riaccredito automatico che ci permette di fornire un rimborso istantaneo per gli ordini che sono stati rifiutati.
+
+L'importo è già stato stornato sul tuo conto Paypal o carta di credito.
+
+Se, a distanza di 24 ore dalla richiesta di annullamento, visualizzi ancora l'importo della transazione, ti chiediamo di inviarci lo screenshot della lista movimenti a founders@dispensa.me 
+
+					</p><br> <br> <h3 class="text-heading">Come faccio a sapere se il mio ordine è stato confermato?</h3><p class="sample-text">
+						Vai sulla pagina dei tuoi ordini, effettuando il login. Se l'ordine compare tra gli ordini effettuati, è stato accettato.
+
+Apri il dettaglio dell'ordine per sapere a che ora sarà consegnato.
+
+Ricordati che, in caso di preordine, riceverai la conferma e quindi l'ordine sarà visibile tra gli ordini effettuati solo quando il negozio aprirà e potrà quindi accettarlo.
+
+La prossima volta che ordini, assicurati di avere la pagina degli ordini aperta per visualizzare la conferma (può richiedere un po' di tempo). Se invece utilizzi l'app Android o iOS, riceverai una notifica push.
+
+					</p></div>
+			</section>
+			
+
+			<!-- start footer Area -->		
+			<footer class="footer-area section-gap">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-5 col-md-6 col-sm-6">
@@ -156,7 +135,7 @@
 									<h6>Follow Us</h6>
 									<p> Seguici sulle nostre pagine ufficiali</p>
 									<div class="footer-social d-flex align-items-center">
-										<a href="https://facebook.com/dispensa.me"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-facebook"></i></a>
 										<a href="#"><i class="fa fa-twitter"></i></a>
 										
 										
@@ -166,23 +145,22 @@
 						</div>
 					</div>
 				</footer>					
+			<!-- End footer Area -->	
 			</div>
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
   			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
 			<script src="js/jquery.ajaxchimp.min.js"></script>
 			<script src="js/jquery.magnific-popup.min.js"></script>	
 			<script src="js/owl.carousel.min.js"></script>			
-			<script src="js/jquery.sticky.js"></script>			
+			<script src="js/jquery.sticky.js"></script>
 			<script src="js/jquery.nice-select.min.js"></script>			
 			<script src="js/parallax.min.js"></script>	
-			<script src="js/mail-script.js"></script>
-			<script src="js/isotope.pkgd.min.js"></script>	
+			<script src="js/mail-script.js"></script>				
 			<script src="js/main.js"></script>	
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBw-ZazXWad4kEd_S4UY2oLPp8Qo-6Rgs&libraries=places&callback=initAutocomplete" async defer></script>
 		</body>
 	</html>
-
-
-
